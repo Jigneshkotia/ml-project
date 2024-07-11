@@ -5,8 +5,8 @@ from sklearn.model_selection import train_test_split
 from xgboost import XGBRegressor 
 from sklearn import metrics 
 
-calories = pd.read_csv('/Users/jignesh/Desktop/machine learning/project/calories.csv') 
-exercise_data = pd.read_csv('/Users/jignesh/Desktop/machine learning/project/exercise.csv') 
+calories = pd.read_csv('calories.csv') 
+exercise_data = pd.read_csv('exercise.csv') 
 
 def calories_burn(model_data):
     calories_data = pd.concat([exercise_data, calories['Calories']],axis=1) 
